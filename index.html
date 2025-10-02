@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Crypto</title>
-    <style>
-        body {
-            background-color: darkslategrey;
-            color: papayawhip;
-             line-height: 1.2; 
-        }
-        p {
-            margin: 0.2em 0; 
-        }
-        a:active {
-            color: white;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-         <h1>Settings</h1>
-         <p>All Settings </p>
-         <p>Published</p>
-         <a href= "https://www.binance.com/ru-UA/price/bitcoin" target="_blank">BTC</a></p>
-         <a href= "https://www.binance.com/ru-UA/price/tether" target="_blank">USDT</a></p>
-         <a href= "https://www.binance.com/ru-UA/price/ethereum" target="_blank">ETH</a></p>
-<table class="table">
+<h1>Settings</h1>
+
+<div class="tabs">
+  <button class="active">All settings</button>
+  <button>Published</button>
+  <button>BTC</button>
+  <button>ETH</button>
+  <button>USDT</button>
+  <button>TON</button>
+</div>
+
+<div class="table-container">
+  <table class="custom-table">
     <thead>
-        <tr>
-           <th>Setting name</th>
-           <th>Status</th>
-        </tr>
+      <tr>
+        <th>Setting name</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td><a href = "#">Content</a></td>
-            <td>Draft <span>🗑</span></td>
-            
-        </tr>
-        <tr>
-            <td><a href = "#">Content</a></td>
-            <td>Active <span>🗑</span></td>
-        <tr>
-            <td><a href = "#">Content</a></td>
-            <td>Active <span>🗑</span></td>
-        </tr>
+      <tr>
+        <td><a href="#">Content</a></td>
+        <td><span class="badge draft">Draft</span></td>
+        <td><button class="delete">🗑</button></td>
+      </tr>
+      <tr>
+        <td><a href="#">Content</a></td>
+        <td><span class="badge active">Active</span></td>
+        <td><button class="delete">🗑</button></td>
+      </tr>
+      <tr>
+        <td><a href="#">Content</a></td>
+        <td><span class="badge draft">Draft</span></td>
+        <td><button class="delete">🗑</button></td>
+      </tr>
     </tbody>
-    
-</table>
+  </table>
+</div>
 
-         
 </body>
 </html>
